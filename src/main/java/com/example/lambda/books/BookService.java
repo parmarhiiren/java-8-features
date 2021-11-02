@@ -1,6 +1,7 @@
 package com.example.lambda.books;
 
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class BookService {
@@ -12,7 +13,8 @@ public class BookService {
         // Collections.sort(listofBooks, new BooksComparator());
 
         // Lamda way for sorting. The entire BookComparator can be written in a one line
-        Collections.sort(listofBooks, (book1,book2) -> book1.getName().compareTo(book2.getName()));
+        // Collections.sort(listofBooks, (book1,book2) -> book1.getName().compareTo(book2.getName()));
+        Collections.sort(listofBooks, Comparator.comparing(Book::getName));
         return listofBooks;
     }
 

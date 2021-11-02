@@ -1,4 +1,4 @@
-package com.example.interview;
+package com.example.programs;
 
 import java.util.*;
 import java.util.function.Function;
