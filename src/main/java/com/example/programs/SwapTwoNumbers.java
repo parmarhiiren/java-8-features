@@ -7,25 +7,25 @@ package com.example.programs;
 public class SwapTwoNumbers {
 
     public static void main(String[] args) {
-        int x = 10;
-        int y = 20;
-        System.out.println("Before Swapping : x = " + x + " y = " + y);
-        swapWithoutVariable(x , y);
-        swapWithVariable(x , y);
+        int first = 10;
+        int second = 20;
+        System.out.println("Before Swapping : first = " + first + " second = " + second);
+        swapWithoutVariable(first , second);
+        swapWithVariable(first , second);
     }
 
-    private static void swapWithVariable(int x, int y) {
-        int z;
-        z = x;
-        x = y;
-        y = z;
-        System.out.println("After  Swapping : x = " + x + " y = " + y);
+    private static void swapWithVariable(int first, int second) {
+        int third;
+        third = first;
+        first = second;
+        second = third;
+        System.out.println("After  Swapping : first = " + first + " second = " + second);
     }
 
-    public static void swapWithoutVariable(int x, int y) {
-        y = x + y; // y = 30
-        x = y - x; // x = 20
-        y = y - x; // y = 10
-        System.out.println("After  Swapping : x = " + x + " y = " + y);
+    public static void swapWithoutVariable(int first, int second) {
+        second = first + second; // second = 30
+        first = second - first; // first = 20
+        second = second - first; // second = 10
+        System.out.println("After  Swapping : first = " + first + " second = " + second);
     }
 }

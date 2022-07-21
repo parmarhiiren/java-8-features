@@ -13,10 +13,10 @@ package com.example.programs;
  * Input: n = 19
  * Output: true
  * Explanation:
- * 12 + 92 = 82
- * 82 + 22 = 68
- * 62 + 82 = 100
- * 12 + 02 + 02 = 1
+ * 1 square + 9 square = 82
+ * 8 square + 2 square = 68
+ * 6 square + 8 square = 100
+ * 1 square + 0 square + 0 square = 1
  */
 public class Happy {
 
